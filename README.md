@@ -6,10 +6,12 @@ Resources:
 - 21st Century C
 - Modern C
 
-Goals:
+End Goals:
 - [ ] Master pointers & references
 - [ ] Learn unit testing
 - [ ] Understand generic selection (`_generic`)
 
 Currently Learning:
-- Compilation and make files
+- [x] Compilation and make files
+- [x] Structs
+- [ ] 
