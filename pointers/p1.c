@@ -5,6 +5,7 @@ int *ptr;
 
 int main(void)
 {
+    printf("sizeof pointer %lu\n", sizeof(ptr));
     j = 1;
     k = 2;
     ptr = &k;
