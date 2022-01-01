@@ -15,9 +15,13 @@ char *my_strcpy(char *destination, char *source)
 }   
 
 void intcpy(const int *source, int *target, int n) {
+    printf("target");
+    int *target_ptr = target;
     for (int i=0; i<n; i++) {
-        *target++ = *source++;
+        *target_ptr++ = *source++;
+        printf("%i", *target_ptr);
     }
+    printf("\n");
 }
 
 
@@ -45,10 +49,18 @@ int main(void)
     int b[10];
 
     intcpy(a, b, 3);
+
+    int *b_ptr= b;
+    int *a_ptr = a;
    
-    for (int i=0; i< (sizeof(b)/sizeof(b[0])); i++) {
-        printf("%i", b[i]);
+    for (int i=0; i < 10; i++) {
+        printf("%i\n", *a_ptr++);
     }
+    printf("\n");
+    for (int i=0; i < 10; i++) {
+        printf("%i\n", *b_ptr++);
+    }
+    printf("\n");
 
     return 0;
 }
