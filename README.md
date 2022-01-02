@@ -2,7 +2,7 @@
 
 Learning the C language
 
-Resources:
+Reading:
 - 21st Century C
 - Modern C
 
@@ -13,5 +13,4 @@ End Goals:
 
 Currently Learning:
 - [x] Compilation and make files
-- [x] Structs
-- [ ] 
+- [ ] Structs
