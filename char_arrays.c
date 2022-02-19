@@ -2,10 +2,11 @@
 
 int main() {
     char name[4] = "bob";
+    char empty[4] = "";
     char *n = name;
 
-    int a = *name == 'b';
-    int b = name[0] == 'b';
+    int a = *empty == '\0';
+    int b = *empty == '\n';
     int c = *n == *name;
     int d = *n == 'b';
 
