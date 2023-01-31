@@ -30,23 +30,23 @@ int main() {
     printf("round: %d\n",round); 
 	printf("%s\n", toBinary(round));
 
-    clock_t start, stop;
-    start = clock();
-    int number;
-    for (int i=0; i<1000000000; i++) {
-        number = i & (-8);
-    }
-    stop = clock();
-    double total = (double) (stop-start) / CLOCKS_PER_SEC;
-
-    printf("optimized time : %f\n", total);
-
-    start = clock();
-    for (int i=0; i<1000000000; i++) {
-        number = (8-(i % 8)) + i;
-    }
-    stop = clock();
-    total = (double) (stop-start) / CLOCKS_PER_SEC;
-
-    printf("naive time: %f\n", total);
+//    clock_t start, stop;
+//    start = clock();
+//    int number;
+//    for (int i=0; i<1000000000; i++) {
+//        number = i & (-8);
+//    }
+//    stop = clock();
+//    double total = (double) (stop-start) / CLOCKS_PER_SEC;
+//
+//    printf("optimized time : %f\n", total);
+//
+//    start = clock();
+//    for (int i=0; i<1000000000; i++) {
+//        number = (8-(i % 8)) + i;
+//    }
+//    stop = clock();
+//    total = (double) (stop-start) / CLOCKS_PER_SEC;
+//
+//    printf("naive time: %f\n", total);
 }
