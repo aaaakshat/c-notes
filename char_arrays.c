@@ -26,6 +26,7 @@ int main() {
     int *p = (arr + 4);
 
     char english[5] = {'a', 'b', 'c', 'd', 'e'};
+    printf("sizeof %lu\n", sizeof(english));
     char *ptr = (english+1);
     char *ptr2 = english+1;
 

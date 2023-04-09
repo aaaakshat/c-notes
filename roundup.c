@@ -18,7 +18,7 @@ int main() {
     printf("Enter a number to round\n");
     scanf("%d", &inp);
     int add = inp + 7;
-    int mask = (~7);
+    int mask = (-8);
     int round = add & mask;
 
     printf("inp: %d\n",inp); 
